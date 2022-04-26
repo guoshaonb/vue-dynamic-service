@@ -5,8 +5,8 @@ general-admin-server 使用了`koa2`,`sequelize`等技术栈进行开发，代�
 ## 特性
 
 - **最新技术栈**：使用 koa2/sequelize 等技术开发
-- **简单易学**: 只需要你会前端基，并了解koa和sequelize的基础后，即可上手
-- **curd很棒**: 不需要会sql语句，加新模块只需要仿照现有代码就行
+- **简单易学**: 只需要你会前端，并了解koa和sequelize的基础后，即可上手
+- **curd很棒**: 不需要你会sql，在项目中添加新模块只需要仿照现有代码即可
 
 ## 项目地址
 
@@ -39,5 +39,5 @@ cnpm install
 - 运行
 
 ```bash
-npm start
+cnpm start
 ```
