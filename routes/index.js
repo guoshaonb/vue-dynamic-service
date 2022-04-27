@@ -1,7 +1,6 @@
 const Router = require('koa-router')
 const User = require('../controllers/User')
 const Menu = require('../controllers/Menu')
-const Catalogue = require('../controllers/Catalogue')
 const Generalconfig = require('../controllers/Generalconfig')
 const Configclassify = require('../controllers/Configclassify')
 const Generaldata = require('../controllers/Generaldata')
@@ -37,30 +36,14 @@ Routers.put('/user/updpass', User.updpass);
 Routers.delete('/user/hidden/:id', User.hidden);
 
 /**
- * 目录接口
- */
-// 获取目录列表
-Routers.get('/catalogue/list', Catalogue.list);
-// 查询目录ID下的所有菜单列表
-Routers.get('/catalogue/menu/:id', Catalogue.menu);
-// 创建目录
-Routers.post('/catalogue/create', Catalogue.create);
-// 获取目录详情
-Routers.get('/catalogue/detail/:id', Catalogue.detail);
-// 更新目录
-Routers.put('/catalogue/update/:id', Catalogue.update);
-// 删除目录
-Routers.delete('/catalogue/hidden/:id', Catalogue.hidden);
-
-/**
  * 菜单接口
  */
 // 获取菜单列表
 Routers.get('/menu/list', Menu.list);
-// 获取菜单详情
-Routers.get('/menu/detail/:id', Menu.detail);
 // 创建菜单
 Routers.post('/menu/create', Menu.create);
+// 获取菜单详情
+Routers.get('/menu/detail/:id', Menu.detail);
 // 更新菜单
 Routers.put('/menu/update/:id', Menu.update);
 // 删除菜单

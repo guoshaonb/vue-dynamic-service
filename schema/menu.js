@@ -1,18 +1,42 @@
 const moment = require('moment');
 module.exports = function (sequelize, DataTypes) {
     return sequelize.define('menu', {
-        // 页面ID
         id: {
             type: DataTypes.INTEGER.UNSIGNED,
             primaryKey: true,
             allowNull: true,
             autoIncrement: true,
         },
-        // 页面名称
+        // 菜单名字
         name: {
-            type: DataTypes.STRING(100),
-            allowNull: false,
+            type: DataTypes.STRING(30),
             field: 'name',
+            allowNull: false
+        },
+        // 菜单类型 1:目录 2:菜单
+        type: {
+            type: DataTypes.STRING(100),
+            field: 'type',
+            allowNull: false
+        },
+        // 上级id
+        parent_id: {
+            type: DataTypes.INTEGER.UNSIGNED,
+            field: 'parent_id',
+            allowNull: false
+        },
+        // 菜单icon图标
+        icon: {
+            type: DataTypes.STRING(100),
+            field: 'icon',
+            allowNull: false
+        },
+        // 权重
+        z_index: {
+            type: DataTypes.STRING(30),
+            field: 'z_index',
+            default: 1,
+            allowNull: false
         },
         // 是否软删除
         is_del: {
@@ -29,8 +53,8 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
         updatedAt: {
-            type: DataTypes.DATE,
             field: 'updated_at',
+            type: DataTypes.DATE,
             get() {
                 return moment(this.getDataValue('updatedAt')).format('YYYY-MM-DD');
             }
@@ -41,5 +65,4 @@ module.exports = function (sequelize, DataTypes) {
         // 如果指定的表名称本就是复数形式则不变
         freezeTableName: true
     })
-
 }
