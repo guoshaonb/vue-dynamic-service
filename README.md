@@ -8,8 +8,9 @@ general-admin-server 使用了`koa2`,`sequelize`等技术栈进行开发，代�
 
 ## 演示视频
 
-<div align="center" style="padding:20px 0">
-  <video src='http://106.55.240.242/my-file-path/video/demonstration.mp4' autoplay muted></video>
+<div style="padding:20px 0">
+  <a href="http://106.55.240.242/my-file-path/video/demonstration.mp4">点我查看演示视频！！</a>
+  <!-- <video src='http://106.55.240.242/my-file-path/video/demonstration.mp4' autoplay muted></video> -->
 </div>
 
 ## 特性
