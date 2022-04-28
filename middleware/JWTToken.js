@@ -14,7 +14,6 @@ module.exports = function () {
         // 检测过滤的路由就不做解析JWT了
         if (JWTPath.find(item => item === ctx.request.url)) {
             await next()
-
             return false;
         }
 
