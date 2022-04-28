@@ -58,9 +58,9 @@ cnpm start
 ```bash
 1、找到admin-common里面的user表的user表
 2、添加一行数据--》
-username：test
-password：$2a$10$l/Dt7.UITCoMaQNHCu71COijw.Hl18OEw3jTf00Y8PQVz1FnLPUZ.（最后一个“.”别忘记复制）
-email：123456@qq.com
-role_id：0
+  username：test
+  password：$2a$10$l/Dt7.UITCoMaQNHCu71COijw.Hl18OEw3jTf00Y8PQVz1FnLPUZ.（最后一个“.”别忘记复制）
+  email：123456@qq.com
+  role_id：0
 3、保存数据后，下次即可在后台系统那里通过test,123456进行登录
 ```
