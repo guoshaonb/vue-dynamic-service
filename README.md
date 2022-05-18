@@ -1,10 +1,10 @@
-<div align="center"> <a href="https://github.com/guoshaonb/general-admin-server"> <img alt="VbenAdmin Logo" width="100" height="100" src="http://106.55.240.242/my-file-path/images/admin-pwa-middle.png"></a>
-<h1>general-admin-server 管理员</h1>
+<div align="center"> <a href="https://github.com/guoshaonb/vue-dynamic-service"> <img alt="VbenAdmin Logo" width="100" height="100" src="http://106.55.240.242/my-file-path/images/admin-pwa-middle.png"></a>
+<h1>vue-dynamic-service 管理员</h1>
 </div>
 
 ## 简介
 
-general-admin-server 使用了`koa2`,`sequelize`等技术栈进行开发，代码清晰易读，开箱即用。
+vue-dynamic-service 使用了`koa2`,`sequelize`等技术栈进行开发，代码清晰易读，开箱即用。
 
 ## 演示视频
 
@@ -21,8 +21,8 @@ general-admin-server 使用了`koa2`,`sequelize`等技术栈进行开发，代�
 
 ## 项目地址
 
-- [general-admin-web](https://github.com/guoshaonb/general-admin-web) - 前端代码
-- [general-admin-server](https://github.com/guoshaonb/general-admin-server) - 后端代码
+- [vue-dynamic-admin](https://github.com/guoshaonb/vue-dynamic-admin) - 前端代码
+- [vue-dynamic-service](https://github.com/guoshaonb/vue-dynamic-service) - 后端代码
 
 ## 准备
 
@@ -35,13 +35,13 @@ general-admin-server 使用了`koa2`,`sequelize`等技术栈进行开发，代�
 - 获取项目代码
 
 ```bash
-git clone https://github.com/guoshaonb/general-admin-server.git
+git clone https://github.com/guoshaonb/vue-dynamic-service.git
 ```
 
 - 安装依赖
 
 ```bash
-cd general-admin-server
+cd vue-dynamic-service
 
 cnpm install
 

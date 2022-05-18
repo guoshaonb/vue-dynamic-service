@@ -7,7 +7,7 @@ const Generaldata = require('../controllers/Generaldata')
 const UploadToken = require('../controllers/UploadToken')
 
 const Routers = new Router({
-    prefix: '/api/v1'
+  prefix: '/api/v1'
 })
 
 /**

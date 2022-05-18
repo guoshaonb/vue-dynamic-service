@@ -15,7 +15,15 @@ const JWTToken = require('./middleware/JWTToken')
 onerror(app)
 
 app.use(JWTToken())
-app.use(cors());
+app.use(cors({
+  // 任何地址都可以访问
+  origin:"*",
+  // 指定地址才可以访问
+  // origin: 'http://localhost:8080',
+  maxAge: 2592000,
+  // 必要配置
+  credentials: true
+}));
 
 // 此接口列表，过滤不用jwt验证
 app.use(jwt({ secret: secret.sign }).unless({
