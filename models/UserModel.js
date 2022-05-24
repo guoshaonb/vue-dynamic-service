@@ -137,7 +137,7 @@ class UserModel {
   * @param id 用户ID
   * @param data 用户参数
   */
-  static async hidden(id, data) {
+  static async delete(id, data) {
     return await User.update(data, {
       where: {
         id,

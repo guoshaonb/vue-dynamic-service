@@ -145,7 +145,7 @@ class MenuModel {
   * @param id 菜单D
   * @param data 菜单参数
   */
-  static async hidden(id, data) {
+  static async delete(id, data) {
     return await Menu.update(data, {
       where: {
         id,

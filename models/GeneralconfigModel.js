@@ -95,7 +95,7 @@ class GeneralconfigModel {
    * @param id 配置ID
    * @param data 配置ID
    */
-  static async hidden(id, data) {
+  static async delete(id, data) {
     return await Generalconfig.update(data, {
       where: {
         id,

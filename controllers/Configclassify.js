@@ -168,7 +168,7 @@ class Configclassify {
    * @param ctx is_del 是否软删除
    * @returns {Promise<boolean>}
    */
-  static async hidden(ctx) {
+  static async delete(ctx) {
     let { id } = ctx.params;
     let { is_del } = ctx.query;
 
@@ -177,7 +177,7 @@ class Configclassify {
     }
 
     try {
-      await ConfigclassifyModel.hidden(id, { is_del });
+      await ConfigclassifyModel.delete(id, { is_del });
 
       ctx.response.status = 200;
       ctx.body = {

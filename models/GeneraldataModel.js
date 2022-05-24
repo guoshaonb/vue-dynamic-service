@@ -227,7 +227,7 @@ class GeneraldataModel {
    * @param id 数据ID
    * @param data 数据ID
    */
-  static async hidden(id, data) {
+  static async delete(id, data) {
     return await Generaldata.update(data, {
       where: {
         id,
@@ -241,7 +241,7 @@ class GeneraldataModel {
    * @param id 数据ID
    * @param data 数据ID
    */
-  static async hiddens(ids, data) {
+  static async deletes(ids, data) {
     return await Generaldata.update(data, {
       where: {
         id: {

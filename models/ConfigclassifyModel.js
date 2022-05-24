@@ -95,7 +95,7 @@ class ConfigclassifyModel {
    * @param id 配置分类ID
    * @param data 配置分类ID
    */
-  static async hidden(id, data) {
+  static async delete(id, data) {
     return await Configclassify.update(data, {
       where: {
         id,

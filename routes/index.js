@@ -33,7 +33,7 @@ Routers.put('/user/update/:id', User.update);
 // 修改用户密码
 Routers.put('/user/updpass', User.updpass);
 // 删除用户
-Routers.delete('/user/hidden/:id', User.hidden);
+Routers.delete('/user/delete/:id', User.delete);
 
 /**
  * 菜单接口
@@ -47,7 +47,7 @@ Routers.get('/menu/detail/:id', Menu.detail);
 // 更新菜单
 Routers.put('/menu/update/:id', Menu.update);
 // 删除菜单
-Routers.delete('/menu/hidden/:id', Menu.hidden);
+Routers.delete('/menu/delete/:id', Menu.delete);
 
 /**
  * 公用配置接口
@@ -61,7 +61,7 @@ Routers.post('/generalconfig/create', Generalconfig.create);
 // 更新公用配置
 Routers.put('/generalconfig/update/:id', Generalconfig.update);
 // 删除公用配置
-Routers.delete('/generalconfig/hidden/:id', Generalconfig.hidden);
+Routers.delete('/generalconfig/delete/:id', Generalconfig.delete);
 // 根据内容翻译
 Routers.get('/generalconfig/translate', Generalconfig.translate);
 
@@ -77,7 +77,7 @@ Routers.post('/configclassify/create', Configclassify.create);
 // 更新公用分类配置
 Routers.put('/configclassify/update/:id', Configclassify.update);
 // 删除公用分类配置
-Routers.delete('/configclassify/hidden/:id', Configclassify.hidden);
+Routers.delete('/configclassify/delete/:id', Configclassify.delete);
 
 /**
  * 公用数据接口
@@ -93,8 +93,8 @@ Routers.post('/generaldata/create', Generaldata.create);
 // 更新公用数据
 Routers.put('/generaldata/update/:id', Generaldata.update);
 // 删除公用数据
-Routers.delete('/generaldata/hidden/:id', Generaldata.hidden);
+Routers.delete('/generaldata/delete/:id', Generaldata.delete);
 // 批量删除公用数据
-Routers.delete('/generaldata/hiddens', Generaldata.hiddens);
+Routers.delete('/generaldata/deletes', Generaldata.deletes);
 
 module.exports = Routers

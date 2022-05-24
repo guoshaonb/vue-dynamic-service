@@ -354,7 +354,7 @@ class User {
   * @param ctx is_del 是否软删除
   * @returns {Promise<boolean>}
   */
-  static async hidden(ctx) {
+  static async delete(ctx) {
     let { id } = ctx.params;
     let { is_del } = ctx.query;
 
@@ -364,7 +364,7 @@ class User {
     }
 
     try {
-      await UserModel.hidden(id, { is_del });
+      await UserModel.delete(id, { is_del });
 
       ctx.response.status = 200;
       ctx.body = {
