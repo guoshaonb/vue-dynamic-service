@@ -9,8 +9,8 @@ vue-dynamic-service 使用了`koa2`,`sequelize`等技术栈进行开发，代码
 ## 演示视频
 
 <div style="padding:20px 0">
-  <a href="http://www.guoshao520.com/my-file-path/video/demonstration.mp4">点我查看演示视频！！</a>
-  <!-- <video src='http://www.guoshao520.com/my-file-path/video/demonstration.mp4' autoplay muted></video> -->
+  <a href="http://gs-file-path.test.upcdn.net/filePath/demonstration.mp4">点我查看演示视频！！</a>
+  <!-- <video src='http://gs-file-path.test.upcdn.net/filePath/demonstration.mp4 autoplay muted></video> -->
 </div>
 
 ## 特性
